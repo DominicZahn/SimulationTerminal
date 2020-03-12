@@ -30,4 +30,8 @@ public:
 	bool transformToCpp() {
 		return true;
 	}
+
+	bool compile() {
+		return true;
+	}
 };
