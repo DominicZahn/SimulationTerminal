@@ -3,13 +3,11 @@
 File::File(string path) {
 	modified = false;
 
-	size_t startExtension = path.find_last_of(".");
-	size_t startName = path.find_last_of("/");
-	extension = path.substr(startExtension + 1);
-	name = path.substr(startName + 1, startExtension);
-
+	string fullName = path.substr(path.find_last_of("/") + 1);
+	size_t startExtension = fullName.find_last_of(".");
+	extension = fullName.substr(startExtension + 1);
+	name = fullName.substr(0, startExtension);
 	File::path = path;
-
 }
 
 string File::getExtension() {
