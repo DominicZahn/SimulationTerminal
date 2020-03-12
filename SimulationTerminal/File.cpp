@@ -1,37 +1,41 @@
 #include "File.h"
-#include <string>
 
-using namespace std;
+File::File(string path) {
+	modified = false;
 
-class File {
-private:
-	string extension;
-	string name;
-	string path;
-	bool modified = false;
+	size_t startExtension = path.find_last_of(".");
+	size_t startName = path.find_last_of("/");
+	extension = path.substr(startExtension + 1);
+	name = path.substr(startName, startExtension);
+}
 
-public:
-	File(string path) {
+string File::getExtension() {
+	return extension;
+}
 
-	}
+string File::getName() {
+	return name;
+}
 
-	string getExtension() {
-		return extension;
-	}
+string File::getPath() {
+	return path;
+}
 
-	string getName() {
-		return name;
-	}
+bool File::getModified() {
+	return modified;
+}
 
-	string getPath() {
-		return path;
-	}
+bool File::transformToCpp() {
+	//TODO
+	return true;
+}
 
-	bool transformToCpp() {
-		return true;
-	}
+bool File::compile() {
+	//TODO
+	return true;
+}
 
-	bool compile() {
-		return true;
-	}
-};
+// changes the arduino commands to the simulation commands
+void exchangeCommands() {
+	//TODO
+}

@@ -1,0 +1,4 @@
+﻿  File.cpp
+E:\Dokumente\SimulationTerminal\SimulationTerminal\File.h(1,10): fatal error C1034: string: Kein Suchpfad f³r Headerdateien vorhanden
+  SimulationTerminal.cpp
+E:\Dokumente\SimulationTerminal\SimulationTerminal\SimulationTerminal.cpp(1,10): fatal error C1034: Windows.h: Kein Suchpfad f³r Headerdateien vorhanden
