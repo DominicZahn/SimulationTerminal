@@ -26,4 +26,8 @@ public:
 	string getPath() {
 		return path;
 	}
+
+	bool transformToCpp() {
+		return true;
+	}
 };
