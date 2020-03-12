@@ -1,20 +1,10 @@
-#include <string.h>
-#include <stdio.h>
+#include <Windows.h>
+#include <string>
+#include <iostream>
+
+using namespace std;
 
 int main()
 {
-}
-
-/*	- checks if file is valid and available
-	- copies the file
-	- changes the extension
-*/
-bool inoToC() {
-	return true;
-}
-
-/*	- exchanges arduino commands with commands for the simulator
-*/
-bool exchange() {
-	return true;
+	string testFilePath = "E:/Dokumente/Arduino/testConvert/testConvert.ino";
 }
