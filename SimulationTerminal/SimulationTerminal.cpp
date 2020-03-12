@@ -11,7 +11,7 @@ int main()
 	string testFilePath = "E:/Dokumente/Arduino/testConvert/testConvert.ino";
 	File testFile(testFilePath);
 
-	cout << testFile.getName();
-	cout << testFile.getExtension();
-	cout << testFile.getModified();
+	cout << testFile.getName() << "\n";
+	cout << testFile.getExtension() << "\n";
+	cout << testFile.getModified() << "\n";
 }

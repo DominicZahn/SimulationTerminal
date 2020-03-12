@@ -6,7 +6,10 @@ File::File(string path) {
 	size_t startExtension = path.find_last_of(".");
 	size_t startName = path.find_last_of("/");
 	extension = path.substr(startExtension + 1);
-	name = path.substr(startName, startExtension);
+	name = path.substr(startName + 1, startExtension);
+
+	File::path = path;
+
 }
 
 string File::getExtension() {
