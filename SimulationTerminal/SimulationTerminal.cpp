@@ -8,10 +8,13 @@ using namespace std;
 
 int main()
 {
-	string testFilePath = "E:/Dokumente/Arduino/testConvert/testConvert.ino";
-	File testFile(testFilePath);
+	cout << "Input the path of the .ino file" << endl;
+	string input;
+	cin >> input;
 
-	cout << testFile.getName() << "\n";
-	cout << testFile.getExtension() << "\n";
-	cout << testFile.getModified() << "\n";
+	File testFile(input);
+
+	cout << "name: " << testFile.getName() << "\n";
+	cout << "extension: " << testFile.getExtension() << "\n";
+	cout << "modified: " << testFile.getModified() << "\n";
 }
