@@ -17,4 +17,8 @@ int main()
 	cout << "name: " << testFile.getName() << "\n";
 	cout << "extension: " << testFile.getExtension() << "\n";
 	cout << "modified: " << testFile.getModified() << "\n";
+
+	cout << "Reading .ino file..." << "\n";
+
+	testFile.transformToCpp();
 }

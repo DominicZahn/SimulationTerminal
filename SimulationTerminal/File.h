@@ -1,7 +1,17 @@
 #include <string>
 #include <algorithm>
+#include <sstream>
+#include <fstream>
 
 using namespace std;
+
+//test
+#include <iostream>
+
+//test path
+/*
+"E:\Dokumente\Arduino\testConvert\testConvert.ino"
+*/
 
 class File
 {

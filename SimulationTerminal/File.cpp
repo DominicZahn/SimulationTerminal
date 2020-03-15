@@ -2,7 +2,6 @@
 
 File::File(string path) {
 	modified = false;
-
 	// remove "
 	path.erase(
 		remove(path.begin(), path.end(), '\"'),
@@ -33,7 +32,12 @@ bool File::getModified() {
 }
 
 bool File::transformToCpp() {
-	//TODO
+	ifstream infile(path);
+	string line;
+	while (getline(infile, line)) {
+		istringstream iss(line);
+		cout << line << "\n";
+	}
 	return true;
 }
 
@@ -47,6 +51,6 @@ void exchangeCommands() {
 	//TODO
 }
 
-void changeToTxt() {
+void transformToTxt() {
 	//TODO
 }
