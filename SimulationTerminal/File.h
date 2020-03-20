@@ -2,16 +2,9 @@
 #include <algorithm>
 #include <sstream>
 #include <fstream>
-
-using namespace std;
-
-//test
 #include <iostream>
 
-//test path
-/*
-"E:\Dokumente\Arduino\testConvert\testConvert.ino"
-*/
+using namespace std;
 
 class File
 {
@@ -22,6 +15,8 @@ private:
     string path;
     bool modified;
 
+    string exchangeCommands(string oldLine);
+
 public:
     File(string path);
 
@@ -29,8 +24,9 @@ public:
     string getName();
     string getPath();
     bool getModified();
-    // transforms a .ino to .cpp
+    // creates a .cpp from the .ino
     // also replaces the arduino commands with the simulation commands
+    // !!! requires at the moment a directory called Transformed files were it can put the .cpp !!!
     bool transformToCpp();
     // compiles the file to an .exe if it is an modified .cpp
     bool compile();

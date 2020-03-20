@@ -95,6 +95,7 @@
       <PreprocessToFile>false</PreprocessToFile>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
       <PreprocessKeepComments>false</PreprocessKeepComments>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -114,6 +115,7 @@
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <PreprocessSuppressLineNumbers>false</PreprocessSuppressLineNumbers>
       <PreprocessKeepComments>false</PreprocessKeepComments>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

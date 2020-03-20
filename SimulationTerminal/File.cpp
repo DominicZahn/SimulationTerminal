@@ -1,5 +1,10 @@
 #include "File.h"
 
+string File::exchangeCommands(string oldLine)
+{
+	return string();
+}
+
 File::File(string path) {
 	modified = false;
 	// remove "
@@ -32,12 +37,19 @@ bool File::getModified() {
 }
 
 bool File::transformToCpp() {
+	//creates .cpp
+	string cppName = ".\\TransformedFiles\\" + name + ".cpp";
+	ofstream cppFile(cppName);
 	ifstream infile(path);
 	string line;
 	while (getline(infile, line)) {
-		istringstream iss(line);
-		cout << line << "\n";
+		istringstream iss(line);		// reads .ino file
+		string newLine = exchangeCommands(line);
+		cppFile << line << endl;		// writes .cpp file
 	}
+	// close both streams
+	infile.close();
+	cppFile.close();
 	return true;
 }
 
@@ -47,10 +59,7 @@ bool File::compile() {
 }
 
 // changes the arduino commands to the simulation commands
-void exchangeCommands() {
-	//TODO
-}
-
-void transformToTxt() {
-	//TODO
+string exchangeCommands(string oldLine) {
+	// TODO
+	return oldLine;
 }
