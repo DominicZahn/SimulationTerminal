@@ -1,2 +1,7 @@
 # vs files
 SimulationTerminal/.vs/
+
+# compiled project
+SimulationTerminal/Debug/
+SimulationTerminal/Release/
+SimulationTerminal/x64/
